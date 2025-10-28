@@ -79,9 +79,8 @@ For the course slides, I used **Gamma (AI Presentation Builder)**.
 
 ## 📚 Author
 
-Created By: **Nishat Anjum Eva**
-Project: **AI Course – Educational Video & Presentation**
+Created By: ** Nishat Anjum Eva **
+Project: ** AI Course – Educational Video & Presentation**
 
 ---
-
-> If you want, I can format this into a stylish PDF or add screenshots of your slides and video to make it look more professional. 😊
+ 
