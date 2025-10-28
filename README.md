@@ -111,6 +111,9 @@ It focuses equally on **theory** + **hands-on project development**.
 ---
 ## Author :
 **Nishat Anjum Eva**
+**Department:** CSE
+**Course name:** Artificial intelligence
+**session:** Summer-23
 
 ## 🌟 Thank You!
 
