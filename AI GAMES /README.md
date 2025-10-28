@@ -1,57 +1,72 @@
+# 🎮 AI Game Collection (Python)
 
-## 🎯 Game 1 – Tic Tac Toe
-## 🎯 Game 1 – Chess
+🤖 This project contains three classic strategy games developed in Python — each featuring AI-based move logic and player-versus-computer gameplay.
 
-**Description:**  
-A classic 3×3 grid game where the player competes against an AI that never loses. The AI uses **Minimax with Alpha-Beta Pruning** to predict the best move.
-A simplified Chess AI that can predict the next move using search algorithms. It evaluates possible future positions of the board to make intelligent decisions.
+🧠 Overview
+This project demonstrates:
+- AI decision-making in games
+- Game state evaluation
+- Random smart behavior simulation
+- User-friendly GUI using Python
 
-**Algorithm Used:**  
-- **Minimax Algorithm:** Evaluates all possible moves and chooses the optimal one.  
-- **Alpha-Beta Pruning:** Optimizes Minimax by skipping unnecessary branches.
-- **Minimax Algorithm**
-- **Alpha-Beta Pruning**
-- **Depth-Limited Search**
-- **Piece Value Evaluation Function**
-
-**How It Works:**
-1. The game board is represented as a 3×3 matrix.
-2. AI simulates each move recursively.
-3. Using Minimax, it chooses the move that maximizes its chance of winning.
-4. Alpha-Beta pruning reduces the number of evaluated nodes.
-1. AI generates all possible legal moves.
-2. Evaluates board using a scoring function.
-3. Uses Minimax to select the optimal move.
-4. Alpha-Beta Pruning reduces unnecessary search.
+The goal of this project is to show how Python can be used to build interactive and intelligent games.
 
 ---
 
-@@ -52,22 +54,20 @@ A 7×6 grid-based game where players drop colored discs into a column. The AI an
+## 🎯 Game 1 – Chess ♟️
+
+**Description:**  
+A simplified GUI-based Chess game using Tkinter.  
+Players can move all chess pieces and play against the system (basic AI moves).
+
+**Highlights:**
+- Unicode chess pieces (♜ ♞ ♛ etc.)
+- Legal move validation (basic)
+- Player vs. AI mode
+- Visual interactive board
+
+**How It Works:**
+- Game board stored in a matrix
+- AI generates random valid moves
+- Board updates instantly after each move
 
 ---
 
-## 🎯 Game 3 – Chess
-## 🎯 Game 3 – Tic Tac Toe
+## 🎯 Game 2 – Tic-Tac-Toe ❌⭕  
 
 **Description:**  
-A simplified Chess AI that can predict the next move using search algorithms. It evaluates possible future positions of the board to make intelligent decisions.
-A classic 3×3 grid game where the player competes against an AI that never loses. The AI uses **Minimax with Alpha-Beta Pruning** to predict the best move.
+A classic 3×3 grid battle!  
+The AI checks game state and always tries to block the opponent’s winning move.
 
-**Algorithm Used:**  
-- **Minimax Algorithm**
-- **Alpha-Beta Pruning**
-- **Depth-Limited Search**
-- **Piece Value Evaluation Function**
-- **Minimax Algorithm:** Evaluates all possible moves and chooses the optimal one.  
-- **Alpha-Beta Pruning:** Optimizes Minimax by skipping unnecessary branches.
+**Highlights:**
+- Tkinter GUI
+- Win / Draw detection system
+- Smart AI opponent — hardly loses!
+- Fast round resetting
 
-**How It Works:**
-1. AI generates all possible legal moves.
-2. Evaluates board using a scoring function.
-3. Uses Minimax to select the optimal move.
-4. Alpha-Beta Pruning reduces unnecessary search.
-1. The game board is represented as a 3×3 matrix.
-2. AI simulates each move recursively.
-3. Using Minimax, it chooses the move that maximizes its chance of winning.
-4. Alpha-Beta pruning reduces the number of evaluated nodes.
+**AI Logic:**
+- Each possible move evaluated
+- Winning or blocking priority
+- Game ends with visual result popup
+
+---
+
+## 🎯 Game 3 – Rock-Paper-Scissors ✊✋✌️  
+
+**Description:**  
+A simple and fun CLI game.  
+You choose — Rock, Paper, or Scissors — and the computer instantly responds.
+
+**AI Logic:**
+- Random intelligent choice
+- Instant win/loss/draw result
+
+**Game Flow:**
+- Player inputs move
+- AI selects a counter move
+- Score decision based on rules
+
+---
+
+## 📂 Project Structure
 
