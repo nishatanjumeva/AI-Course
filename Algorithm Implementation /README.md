@@ -91,13 +91,13 @@ Applications:
 - Infinite-path avoidance
 
 Complexity:
-Time: O(b^d)
-Space: O(d)
+-Time: O(b^d)
+-Space: O(d)
 
 Example:
-Start: 0, Target: 9, Max Depth: 3
-Output: 0 1 2 5
-Target not found within depth
+-Start: 0, Target: 9, Max Depth: 3
+-Output: 0 1 2 5
+-Target not found within depth
 
 ---------------------------------------------------
 
@@ -111,8 +111,8 @@ Applications:
 - Pathfinding with unknown depth
 
 Complexity:
-Time: O(b^d)
-Space: O(d)
+- Time: O(b^d)
+- Space: O(d)
 
 Example:
 Depth 0: 0
@@ -141,11 +141,11 @@ Applications:
 - AI games
 
 Complexity:
-Time: O(b^m)
-Space: O(b^m)
+- Time: O(b^m)
+- Space: O(b^m)
 
 Example:
-Output: 0 1 3 8 9
+- Output: 0 1 3 8 9
 
 ---------------------------------------------------
 
@@ -160,12 +160,12 @@ Applications:
 - Image captioning
 
 Complexity:
-Time: O(b × k)
-Space: O(b)
+- Time: O(b × k)
+- Space: O(b)
 
 Example:
-Start: 0, Goal: 7, Beam width: 2
-Output: Goal found at node 7
+- Start: 0, Goal: 7, Beam width: 2
+- Output: Goal found at node 7
 
 ---------------------------------------------------
 
@@ -180,12 +180,12 @@ Applications:
 - Social graph search
 
 Complexity:
-Time: O(b^(d/2))
-Space: O(b^(d/2))
+- Time: O(b^(d/2))
+- Space: O(b^(d/2))
 
 Example:
-Start: 0, Target: 9
-Output: Target found at depth 3
+- Start: 0, Target: 9
+- Output: Target found at depth 3
 
 ---------------------------------------------------
 
@@ -200,12 +200,12 @@ Applications:
 - Game pathfinding
 
 Complexity:
-Time: O(b^(d/2))
-Space: O(b^(d/2))
+- Time: O(b^(d/2))
+- Space: O(b^(d/2))
 
 Example:
-Output: Path: 0 2 5 9
-Path length: 3
+- Output: Path: 0 2 5 9
+- Path length: 3
 
 ---------------------------------------------------
 
@@ -220,12 +220,12 @@ Applications:
 - Job scheduling
 
 Complexity:
-Time: Variable (can get stuck in local optima)
-Space: O(1)
+- Time: Variable (can get stuck in local optima)
+- Space: O(1)
 
 Example:
-Function: f(x) = -x² + 10x
-Best found: x = 5, f(x) = 25
+- Function: f(x) = -x² + 10x
+- Best found: x = 5, f(x) = 25
 
 ---------------------------------------------------
 
@@ -240,12 +240,12 @@ Applications:
 - Game theory
 
 Complexity:
-Time: O(b^d)
-Space: O(bd)
+- Time: O(b^d)
+- Space: O(bd)
 
 Example:
-Leaf node scores: [5, 6, 7, 4, 5, 3, 6, 6]
-Best score: 5
+- Leaf node scores: [5, 6, 7, 4, 5, 3, 6, 6]
+- Best score: 5
 
 ---------------------------------------------------
 
@@ -260,11 +260,11 @@ Applications:
 - Adversarial search
 
 Complexity:
-Time: O(b^(d/2)) (best case)
-Space: O(bd)
+- Time: O(b^(d/2)) (best case)
+- Space: O(bd)
 
 Example:
-Output: Optimal value using Alpha-Beta Pruning: 6
+- Output: Optimal value using Alpha-Beta Pruning: 6
 
 ---------------------------------------------------
 
