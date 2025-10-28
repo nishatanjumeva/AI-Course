@@ -118,10 +118,15 @@ Space: O(d)
 
 Example:
 Depth 0: 0
+
 Depth 1: 0 1 2
+
 Depth 2: 0 1 3 4 2 5 6
+
 Depth 3: 0 1 3 7 4 2 5 8 6
+
 Depth 4: 0 1 3 7 4 2 5 8 9
+
 Target found at depth 4
 
 ---------------------------------------------------
