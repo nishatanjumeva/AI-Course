@@ -1,72 +1,185 @@
 # 🎮 AI Game Collection (Python)
 
-🤖 This project contains three classic strategy games developed in Python — each featuring AI-based move logic and player-versus-computer gameplay.
-
-🧠 Overview
-This project demonstrates:
-- AI decision-making in games
-- Game state evaluation
-- Random smart behavior simulation
-- User-friendly GUI using Python
-
-The goal of this project is to show how Python can be used to build interactive and intelligent games.
+🤖 This project includes three classic AI-based games — **Chess**, **Tic-Tac-Toe**, and **Rock Paper Scissors** — each powered by the Minimax Algorithm (with Alpha-Beta Pruning where applicable) to make intelligent decisions.
 
 ---
 
-## 🎯 Game 1 – Chess ♟️
+## 🧠 Overview
 
-**Description:**  
-A simplified GUI-based Chess game using Tkinter.  
-Players can move all chess pieces and play against the system (basic AI moves).
+This project focuses on how Artificial Intelligence search algorithms can be applied in real-time games. Core AI features used in these games include:
 
-**Highlights:**
-- Unicode chess pieces (♜ ♞ ♛ etc.)
-- Legal move validation (basic)
-- Player vs. AI mode
-- Visual interactive board
+* Minimax Algorithm
+* Alpha-Beta Pruning
+* Heuristic Evaluation
+* Depth-Limited Search
+* Simple GUI (tkinter / pygame)
+
+All games share a similar UI flow and organized code structure.
+
+---
+
+## 🎯 Games Included
+
+### 1) Chess (Simplified Version)
+
+**Description:**
+A turn-based simplified chess engine that predicts the next best move by evaluating multiple future board states.
+
+**Algorithms Used:**
+
+* Minimax
+* Alpha-Beta Pruning
+* Depth-Limited Search
+* Piece-Value & Positional Heuristic
 
 **How It Works:**
-- Game board stored in a matrix
-- AI generates random valid moves
-- Board updates instantly after each move
+
+1. AI generates all legal moves.
+2. Board scoring function evaluates each move.
+3. Minimax selects the best move.
+4. Alpha-Beta pruning skips unnecessary branches to improve speed.
+
+> Note: Optional features like en-passant, castling, pawn promotion can be added depending on your implementation.
 
 ---
 
-## 🎯 Game 2 – Tic-Tac-Toe ❌⭕  
+### 2) Tic-Tac-Toe
 
-**Description:**  
-A classic 3×3 grid battle!  
-The AI checks game state and always tries to block the opponent’s winning move.
+**Description:**
+Classic 3×3 board game where the AI is unbeatable using full Minimax search.
 
-**Highlights:**
-- Tkinter GUI
-- Win / Draw detection system
-- Smart AI opponent — hardly loses!
-- Fast round resetting
+**Algorithms Used:**
 
-**AI Logic:**
-- Each possible move evaluated
-- Winning or blocking priority
-- Game ends with visual result popup
+* Minimax (Full Game Tree)
+* Alpha-Beta Pruning (Performance Optimization)
 
----
+**How It Works:**
 
-## 🎯 Game 3 – Rock-Paper-Scissors ✊✋✌️  
-
-**Description:**  
-A simple and fun CLI game.  
-You choose — Rock, Paper, or Scissors — and the computer instantly responds.
-
-**AI Logic:**
-- Random intelligent choice
-- Instant win/loss/draw result
-
-**Game Flow:**
-- Player inputs move
-- AI selects a counter move
-- Score decision based on rules
+* Board is represented as a 3×3 matrix.
+* AI simulates every possible move recursively.
+* Selects the optimal move to ensure win/draw.
 
 ---
 
-## 📂 Project Structure
+### 3) Rock Paper Scissors
 
+**Description:**
+Rock-Paper-Scissors with improved AI that can detect patterns instead of random guessing.
+
+**AI Techniques (choose your approach):**
+
+* Random baseline
+* Pattern-based heuristic
+* History-based prediction (optional upgrade)
+
+---
+
+## ✨ Main Features
+
+* Common UI style for all games
+* AI vs Human mode
+* Tunable search depth
+* Playable GUI experience
+
+---
+
+## 🧰 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/AI-Game-Collection.git
+cd AI-Game-Collection
+
+# Create virtual environment (optional but recommended)
+python -m venv venv
+# Windows
+venv\\Scripts\\activate
+# macOS/Linux
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+Typical dependencies (example):
+
+```
+pygame
+numpy
+python-chess  # optional if used
+```
+
+> Tkinter usually comes pre-installed with Python.
+
+---
+
+## ▶️ Run the Games
+
+Top-level launcher script:
+
+```bash
+python run_game.py
+```
+
+Or launch each game individually:
+
+```bash
+python run_chess.py
+python run_tictactoe.py
+python run_rps.py
+```
+
+---
+
+## 🗂️ Suggested Folder Structure
+
+```
+AI-Game-Collection/
+├─ README.md
+├─ requirements.txt
+├─ run_game.py
+├─ games/
+│  ├─ chess/
+│  │  ├─ board.py
+│  │  ├─ ai.py
+│  │  └─ gui.py
+│  ├─ tictactoe/
+│  │  ├─ game.py
+│  │  ├─ ai.py
+│  │  └─ gui.py
+│  └─ rps/
+│     ├─ game.py
+│     ├─ ai.py
+│     └─ gui.py
+└─ assets/
+   └─ images/
+```
+
+---
+
+## 🛠️ Customization Tips
+
+* **Chess:** Using `python-chess` can simplify legal move generation.
+* **Tic-Tac-Toe:** Full search is lightweight — 100% optimal AI.
+* **RPS:** Try Markov models or frequency analysis to improve prediction.
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`feature/your-feature`)
+3. Add your improvements and test
+4. Submit a pull request
+
+---
+
+## 📄 License
+
+MIT License — see the `LICENSE` file for details.
+
+---
+
+## 📬 Contact
+
+Feel free to open issues or submit pul
