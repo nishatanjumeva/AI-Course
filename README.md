@@ -109,6 +109,8 @@ It focuses equally on **theory** + **hands-on project development**.
 🙌 These tools helped in presenting the technical work more interactively!
 
 ---
+## Author :
+**Nishat Anjum Eva**
 
 ## 🌟 Thank You!
 
