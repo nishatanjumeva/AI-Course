@@ -1,6 +1,4 @@
-🧠 Algorithm Implementation Collection
-
-Author: Nishat Anjum Eva
+**🧠 Algorithm Implementation Collection**
 
 This repository contains implementations of fundamental algorithms in Artificial Intelligence and Computer Science.
 Each algorithm is clearly implemented with well-documented code and examples to help you understand how they work in practice.
