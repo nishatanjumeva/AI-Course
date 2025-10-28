@@ -38,8 +38,8 @@ Applications:
 - Social networks (friend-of-friend search)
 
 Complexity:
-Time: O(V + E)
-Space: O(V)
+- Time: O(V + E)
+- Space: O(V)
 
 Example:
 Input Graph:
@@ -65,8 +65,8 @@ Applications:
 - Maze solving
 
 Complexity:
-Time: O(V + E)
-Space: O(V)
+- Time: O(V + E)
+- Space: O(V)
 
 Example:
 Input Graph:
@@ -91,13 +91,14 @@ Applications:
 - Infinite-path avoidance
 
 Complexity:
--Time: O(b^d)
--Space: O(d)
+- Time: O(b^d)
+- Space: O(d)
 
 Example:
--Start: 0, Target: 9, Max Depth: 3
--Output: 0 1 2 5
--Target not found within depth
+- Start: 0, Target: 9,
+- Max Depth: 3
+- Output: 0 1 2 5
+- Target not found within depth
 
 ---------------------------------------------------
 
@@ -164,7 +165,8 @@ Complexity:
 - Space: O(b)
 
 Example:
-- Start: 0, Goal: 7, Beam width: 2
+- Start: 0, Goal: 7,
+- Beam width: 2
 - Output: Goal found at node 7
 
 ---------------------------------------------------
@@ -184,7 +186,8 @@ Complexity:
 - Space: O(b^(d/2))
 
 Example:
-- Start: 0, Target: 9
+- Start: 0,
+- Target: 9
 - Output: Target found at depth 3
 
 ---------------------------------------------------
