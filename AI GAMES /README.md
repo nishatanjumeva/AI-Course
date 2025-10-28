@@ -17,7 +17,6 @@ This project focuses on how Artificial Intelligence search algorithms can be app
 All games share a similar UI flow and organized code structure.
 
 ---
-
 ## 🎯 Games Included
 
 ### 1) Chess (Simplified Version)
@@ -38,8 +37,6 @@ A turn-based simplified chess engine that predicts the next best move by evaluat
 2. Board scoring function evaluates each move.
 3. Minimax selects the best move.
 4. Alpha-Beta pruning skips unnecessary branches to improve speed.
-
-> Note: Optional features like en-passant, castling, pawn promotion can be added depending on your implementation.
 
 ---
 
@@ -72,6 +69,16 @@ Rock-Paper-Scissors with improved AI that can detect patterns instead of random 
 * Pattern-based heuristic
 * History-based prediction (optional upgrade)
 
+**How It Works:**
+
+* The AI analyzes the player's move history.
+* It predicts the most likely upcoming move.
+* Then selects the counter move to win.
+
+**Markov Chain Strategy (Step-by-Step):**
+4. Maintain a transition table like: `transition[last_move][next_move]` that counts how often each move follows another.
+5. When the player makes a move, the AI checks which move typically comes after it and chooses the counter move to beat that predicted move.
+
 ---
 
 ## ✨ Main Features
@@ -80,82 +87,6 @@ Rock-Paper-Scissors with improved AI that can detect patterns instead of random 
 * AI vs Human mode
 * Tunable search depth
 * Playable GUI experience
-
----
-
-## 🧰 Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/AI-Game-Collection.git
-cd AI-Game-Collection
-
-# Create virtual environment (optional but recommended)
-python -m venv venv
-# Windows
-venv\\Scripts\\activate
-# macOS/Linux
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-Typical dependencies (example):
-
-```
-pygame
-numpy
-python-chess  # optional if used
-```
-
-> Tkinter usually comes pre-installed with Python.
-
----
-
-## ▶️ Run the Games
-
-Top-level launcher script:
-
-```bash
-python run_game.py
-```
-
-Or launch each game individually:
-
-```bash
-python run_chess.py
-python run_tictactoe.py
-python run_rps.py
-```
-
----
-
-## 🗂️ Suggested Folder Structure
-
-```
-AI-Game-Collection/
-├─ README.md
-├─ requirements.txt
-├─ run_game.py
-├─ games/
-│  ├─ chess/
-│  │  ├─ board.py
-│  │  ├─ ai.py
-│  │  └─ gui.py
-│  ├─ tictactoe/
-│  │  ├─ game.py
-│  │  ├─ ai.py
-│  │  └─ gui.py
-│  └─ rps/
-│     ├─ game.py
-│     ├─ ai.py
-│     └─ gui.py
-└─ assets/
-   └─ images/
-```
-
----
 
 ## 🛠️ Customization Tips
 
@@ -182,4 +113,8 @@ MIT License — see the `LICENSE` file for details.
 
 ## 📬 Contact
 
-Feel free to open issues or submit pul
+Feel free to open issues or submit pull requests on GitHub.
+
+---
+
+> Need help with adding screenshots, GitHub badges, or feature icons? Just ask! 😊
